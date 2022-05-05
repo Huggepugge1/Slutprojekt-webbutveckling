@@ -1,0 +1,34 @@
+    $header-color: red;
+    header {
+        font-size: 15px;
+        h1 {
+            color: white;
+            width: fit-content;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        background-color: $header-color;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+        nav {
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    margin: 0;
+                    width: fit-content;
+                    position: relative;
+                    &::after {
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        width: 100%;
+                        height: 10px;
+                        content: "";
+                        background-color: pink;
+                    }
+                }
+            }
+        }
+    }

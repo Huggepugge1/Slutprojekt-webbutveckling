@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "node-sass": "^7.0.1",
+        "nodemon": "^2.0.15"
+    },
+    "name": "slutprojekt-webbutveckling",
+    "description": "Jag jobbar på den, okej?",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "css": "node-sass ./scss/index.scss ./css/style.css",
+        "dev": "nodemon -L -x 'npm run css' -e scss,sass,html"
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Huggepugge1/Slutprojekt-webbutveckling.git"
+    },
+    "author": "Hugo Lindström",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Huggepugge1/Slutprojekt-webbutveckling/issues"
+    },
+    "homepage": "https://github.com/Huggepugge1/Slutprojekt-webbutveckling#readme"
+}
