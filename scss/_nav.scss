@@ -1,11 +1,12 @@
 $header-color: red;
-$nav-color: lightgrey;
+$nav-color: rgb(214, 213, 213);
+$text-size: 20px;
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 15px;
+    font-size: $text-size;
     background-color: $header-color;
     padding: 0;
     p {
@@ -25,22 +26,25 @@ header {
             align-items: center;
             gap: 10px;
             li {
+                display: flex;
                 list-style: none;
                 padding: 1em 1.5em;
                 width: fit-content;
-                font-size: 16px;
+                font-size: $text-size;
                 position: relative;
                 &::after {
+                    font-size: $text-size;
                     position: absolute;
-                    transition: all 100ms ease-in-out;
-                    left: 0;
+                    flex-grow: 0;
+                    left: 1.25em;
+                    bottom: 0.75em;
+                    right: 1.25em;
+                    transition: all 150ms ease-in-out;
                     transform: scale(0);
-                    top: 85%;
                     content: "";
                     border-radius: 1000px;
                     background-color: black;
-                    width: 100%;
-                    height: 0.25em;
+                    height: 3px;
                 }
                 &:hover::after {
                     transform: scale(1);

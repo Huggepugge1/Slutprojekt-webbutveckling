@@ -1,0 +1,77 @@
+$about-bgcolor: white;
+$about-textcolor: black;
+$group-bgcolor: rgb(75, 75, 75);
+$group-textcolor: rgb(182, 180, 180);
+$finances-bgcolor: rgb(47, 47, 47);
+$finances-textcolor: rgb(180, 179, 179);
+h1 {
+    font-size: 2.5rem;
+    padding: 0 0 0.5em 0;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    padding: 0 2em 1em 2em;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        top: 80%;
+        left: 0;
+        border-radius: 1000px;
+    }
+}
+
+#about {
+    h1 {
+        &::after {
+            background-color: $about-textcolor;
+        }
+    }
+    font-size: 1.25rem;
+    color: $about-textcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $about-bgcolor;
+    color: $about-textcolor;
+    padding: 2em 15em;
+    a,
+    p {
+        padding-top: 10px;
+    }
+}
+
+#group {
+    font-size: 1.25rem;
+    background-color: $group-bgcolor;
+    color: $group-textcolor;
+    padding: 4em 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    h1 {
+        margin: 0 30% 0 30%;
+        &::after {
+            background-color: $group-textcolor;
+        }
+    }
+}
+
+#finances {
+    background-color: $finances-bgcolor;
+    color: $finances-textcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4em 15em;
+    h1 {
+        margin: 0 50% 0 50%;
+        &::after {
+            background-color: $finances-textcolor;
+        }
+    }
+}
