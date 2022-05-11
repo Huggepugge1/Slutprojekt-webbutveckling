@@ -1,0 +1,36 @@
+$about-text-bgcolor: white;
+$about-text-textcolor: black;
+$about-text-textsize: 18px;
+$studieorter-bgcolor: rgb(75, 75, 75);
+$studieorter-textcolor: rgb(182, 180, 180);
+$studiepopulation-bgcolor: rgb(47, 47, 47);
+$studiepopulation-textcolor: rgb(180, 179, 179);
+$group-bgcolor: black;
+$group-textcolor: lightgrey;
+#about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $about-text-bgcolor;
+    color: $about-text-textcolor;
+    font-size: $about-text-textsize;
+    h2::after {
+        background-color: $about-text-textcolor;
+    }
+}
+
+#studieorter {
+    background-color: $studieorter-bgcolor;
+    color: $studieorter-textcolor;
+}
+
+#studiepopulation {
+    background-color: $studiepopulation-bgcolor;
+    color: $studiepopulation-textcolor;
+}
+
+#group2 {
+    background-color: $group-bgcolor;
+    color: $group-textcolor;
+}

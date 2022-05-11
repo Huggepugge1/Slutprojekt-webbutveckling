@@ -1,7 +1,32 @@
 $bg-color: white;
 $text-color: rgb(74, 74, 74);
 footer {
-    background-color: $bg-color;
-    text-decoration: none;
-    color: $text-color;
+    display: flex;
+    justify-content: center;
+    .container {
+        width: 60%;
+        position: relative;
+        padding: 40px 50px;
+        background-color: $bg-color;
+        color: $text-color;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        a {
+            text-decoration: none;
+            color: $text-color;
+            &:hover {
+                color: lighten($text-color, 25);
+            }
+        }
+        &::before {
+            border-radius: 10000px;
+            background-color: lighten($text-color, 50);
+            content: "";
+            position: absolute;
+            top: 1em;
+            height: 3px;
+            width: 50%;
+        }
+    }
 }

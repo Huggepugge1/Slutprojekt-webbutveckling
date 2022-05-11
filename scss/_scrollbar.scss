@@ -15,10 +15,11 @@ $thumb-color: rgb(87, 86, 86);
     max-height: 100px;
     background-clip: padding-box;
     display: inline-block;
-    border: 3px solid rgba(0, 0, 0, 0);
+    border: 4px solid rgba(0, 0, 0, 0);
     border-radius: 10000px;
     background-color: $thumb-color;
     &:hover {
-        background-color: lighten($thumb-color, 10);
+        background-color: lighten($thumb-color, 15);
+        border: 2px solid rgba(0, 0, 0, 0);
     }
 }

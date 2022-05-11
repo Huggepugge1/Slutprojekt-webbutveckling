@@ -6,17 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
     <title>Lorem, ipsum.</title>
 </head>
 
 <body>
     <header>
-        <p>Lorem ipsum dolor sit.</p>
+        <h1>Lorem ipsum dolor sit.</h1>
         <nav>
             <ul>
                 <li><a href="#">Hem</a></li>
-                <li><a href="about.html">Om projektet</a></li>
+                <li><a href="./pages/about.html">Om projektet</a></li>
                 <li><a href="#">Kalkylprogram</a></li>
                 <li><a href="#">Koder</a></li>
                 <li><a href="#">Tabeller</a></li>
@@ -26,7 +25,9 @@
         </nav>
     </header>
     <section id="about">
-        <h1>Om projektet</h1>
+        <div class="header">
+            <h2>Om projektet</h2>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugit sequi debitis blanditiis doloremque placeat, nostrum repellendus quos dolorum ut maiores ipsam porro labore. Maiores autem at quis omnis ut dolorem quam sunt iusto consectetur
             ab esse deserunt illo asperiores, fugiat architecto vitae itaque? Assumenda sit blanditiis natus obcaecati beatae numquam quibusdam quos repellat aperiam iusto, vero mollitia? Dolorum velit cum saepe accusantium minima sunt. Dolorem ipsam
             in alias recusandae assumenda praesentium blanditiis explicabo quo fugit omnis. Unde, eum consequatur inventore similique nihil maiores ipsa dicta, iste possimus consequuntur commodi officiis quod consectetur tenetur, delectus animi fugit.
@@ -34,13 +35,17 @@
         </p>
         <a href="#">Läs mer här</a>
     </section>
-    <section id="group">
-        <h1>Vilka är vi?</h1>
+    <section id="group1">
+        <div class="header">
+            <h2>Vilka är vi?</h2>
+        </div>
         <p>Vi är en grupp glada forskare från Uppsala Universitet!!</p>
-        <img src="#" alt="Bild på oss, kul va">
+        <img src="./pages/about.html" alt="Bild på oss, kul va">
     </section>
     <section id="finances">
-        <h1>Finansiärer</h1>
+        <div class="header">
+            <h2>Finansiärer</h2>
+        </div>
         <img src="#" alt="bild">
         <img src="#" alt="bild">
         <img src="#" alt="bild">
@@ -49,8 +54,10 @@
         <img src="#" alt="bild">
     </section>
     <footer>
-        <a href="a@a.com">kontakta oss</a>
-        <p>Sverige, Uppsala</p>
+        <div class="container">
+            <a href="mailto: a@a.com">Kontakta oss</a>
+            <p>Sverige, Uppsala</p>
+        </div>
     </footer>
 </body>
 
