@@ -1,0 +1,9 @@
+$ultrasound-bgcolor: white;
+$ultrasound-textcolor: black;
+#ultrasound {
+    background-color: $ultrasound-bgcolor;
+    color: $ultrasound-textcolor;
+    h2::after {
+        background-color: $ultrasound-textcolor;
+    }
+}

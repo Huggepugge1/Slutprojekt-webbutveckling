@@ -1,0 +1,28 @@
+$publications-bgcolor: white;
+$publications-textcolor: rgb(52, 52, 52);
+$publications-hover-textcolor: lighten($publications-textcolor, 25);
+$link-size: 25px;
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    background-color: $publications-bgcolor;
+    color: $publications-textcolor;
+    h2::after {
+        background-color: $publications-textcolor;
+    }
+    a {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        font-size: $link-size;
+        color: $publications-textcolor;
+        text-decoration: none;
+        transition: color 200ms;
+        &:hover {
+            color: $publications-hover-textcolor;
+        }
+    }
+}

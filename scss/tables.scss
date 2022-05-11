@@ -1,0 +1,9 @@
+$tables-bgcolor: white;
+$tables-textcolor: black;
+#tables {
+    background-color: $tables-bgcolor;
+    color: $tables-textcolor;
+    h2::after {
+        background-color: $tables-textcolor;
+    }
+}

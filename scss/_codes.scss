@@ -1,0 +1,9 @@
+$codes-bgcolor: white;
+$codes-textcolor: black;
+#codes {
+    background-color: $codes-bgcolor;
+    color: $codes-textcolor;
+    h2::after {
+        background-color: $codes-textcolor;
+    }
+}

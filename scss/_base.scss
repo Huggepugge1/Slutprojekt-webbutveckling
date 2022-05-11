@@ -1,4 +1,5 @@
-$header-size: 45px;
+$h2-size: 45px;
+$h3-size: 25px;
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
 * {
     margin: 0
@@ -20,7 +21,7 @@ h2 {
     margin: 0 auto;
     font-family: 'Hind', sans-serif;
     letter-spacing: 0.2em;
-    font-size: $header-size;
+    font-size: $h2-size;
     padding: 0 0 0.5em 0;
     text-align: center;
     position: relative;
@@ -34,6 +35,26 @@ h2 {
         top: 80%;
         left: 0;
         border-radius: 1000px;
+    }
+}
+
+h3 {
+    margin: 0 auto;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 0.2em;
+    font-size: $h3-size;
+    text-align: center;
+    position: relative;
+    width: fit-content;
+    padding: 0 2em 0.5em 1.5em;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 2px;
+        top: 80%;
+        left: 0;
+        border-radius: 10000px;
     }
 }
 
