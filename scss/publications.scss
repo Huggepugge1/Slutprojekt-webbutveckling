@@ -1,28 +1,106 @@
-$publications-bgcolor: white;
-$publications-textcolor: rgb(52, 52, 52);
-$publications-hover-textcolor: lighten($publications-textcolor, 25);
-$link-size: 25px;
-#container {
+$publication1-bgcolor: rgb(75, 75, 75);
+$publication1-textcolor: rgb(180, 180, 180);
+$publication1-hover-textcolor: lighten($publication1-textcolor, 25);
+$publication2-bgcolor: rgb(47, 47, 47);
+$publication2-textcolor: rgb(182, 180, 180);
+$publication2-hover-textcolor: lighten($publication2-textcolor, 25);
+$publication3-bgcolor: black;
+$publication3-textcolor: rgb(182, 180, 180);
+$publication3-hover-textcolor: lighten($publication3-textcolor, 25);
+$link-size: 30px;
+#publications-container {
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10%;
     align-items: center;
-    background-color: $publications-bgcolor;
-    color: $publications-textcolor;
-    h2::after {
-        background-color: $publications-textcolor;
+    h2 {
+        padding: 2em;
+        &::after {
+            background-color: black;
+        }
     }
     a {
-        padding: 10px 0;
-        width: 100%;
+        padding: 1em 2em 1em 2em;
         text-align: center;
-        font-size: $link-size;
-        color: $publications-textcolor;
         text-decoration: none;
         transition: color 200ms;
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 2px;
+            top: 80%;
+            left: 0;
+            border-radius: 1000px;
+        }
+    }
+}
+
+#publication1 {
+    background-color: $publication1-bgcolor;
+    color: $publication1-textcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        font-size: $link-size;
+        color: $publication1-textcolor;
         &:hover {
-            color: $publications-hover-textcolor;
+            color: $publication1-hover-textcolor;
+            &::after {
+                background-color: $publication1-hover-textcolor;
+            }
+        }
+        &::after {
+            background-color: $publication1-textcolor;
+        }
+    }
+}
+
+#publication2 {
+    background-color: $publication2-bgcolor;
+    color: $publication2-textcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        font-size: $link-size;
+        color: $publication2-textcolor;
+        &:hover {
+            color: $publication2-hover-textcolor;
+            &::after {
+                background-color: $publication2-hover-textcolor;
+            }
+        }
+        &::after {
+            background-color: $publication2-textcolor;
+        }
+    }
+}
+
+#publication3 {
+    background-color: $publication3-bgcolor;
+    color: $publication3-textcolor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        font-size: $link-size;
+        color: $publication3-textcolor;
+        &:hover {
+            color: $publication3-hover-textcolor;
+            &::after {
+                background-color: $publication3-hover-textcolor;
+            }
+        }
+        &::after {
+            background-color: $publication3-textcolor;
         }
     }
 }
