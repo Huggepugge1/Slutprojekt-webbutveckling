@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="../kalkylatorer/birth.js"></script>
     <title>Tillväxtkurvor</title>
 </head>
 
@@ -33,6 +34,11 @@
         </div>
     </section>
     <a href="#">Graviditetslängd, mitt program, 280 dagar</a>
+    <input type="text" name="EDD" id="EDD" placeholder="beräknad partus (yyyy mm dd)">
+    <input type="text" name="fd" id="fd" placeholder="dagens datum (yyyy mm dd)">
+    <input type="text" name="pregnancy" id="preg" placeholder="graviditetslängd (vecka + dagar)">
+    <input type="button" value="Calculate" onclick=calculate() id="button">
+    <output id="output">output</output>
     <h3>Skattad fostervikt</h3>
     <a href="../kalkylatorer/Kalkylator EFW könsneutral.xlsx">Könsneutral</a>
     <a href="../kalkylatorer/Kalkylator EFW flickor.xlsx">Flickor</a>
