@@ -36,6 +36,7 @@ $finances-textcolor: rgb(180, 180, 180);
 }
 
 #finances {
+    font-size: 1.25rem;
     background-color: $finances-bgcolor;
     color: $finances-textcolor;
     display: flex;
@@ -44,5 +45,26 @@ $finances-textcolor: rgb(180, 180, 180);
     flex-wrap: wrap;
     h2::after {
         background-color: $finances-textcolor;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: [a] 33% [b] 66%;
+        grid-template-rows: [c] 20% [d] 80%;
+        gap: 1em;
+        img {
+            width: 100%;
+        }
+        #image1 {
+            grid-column: a / b;
+            grid-row: c;
+        }
+        #image2 {
+            grid-column: b;
+            grid-row: c;
+        }
+        #image3 {
+            grid-column: b;
+            grid-row: d;
+        }
     }
 }
