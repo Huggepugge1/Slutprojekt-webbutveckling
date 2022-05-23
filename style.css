@@ -191,8 +191,11 @@ header {
     font-size: 70px;
     text-align: center;
     color: white;
-    width: 100%;
+    width: 90%;
     padding: 25px 0; }
+  header img {
+    height: 162px;
+    padding: 0; }
   header nav {
     width: 100%;
     margin: 0;
