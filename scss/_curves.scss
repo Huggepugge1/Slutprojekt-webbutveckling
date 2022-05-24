@@ -1,0 +1,47 @@
+$curve1-bgcolor: rgb(75, 75, 75);
+$curve1-textcolor: rgb(180, 180, 180);
+$curve1-hover-textcolor: lighten($curve1-textcolor, 25);
+$curve2-bgcolor: rgb(47, 47, 47);
+$curve2-textcolor: rgb(180, 180, 180);
+$curve2-hover-textcolor: lighten($curve2-textcolor, 25);
+#curves {
+    background-color: white;
+    color: black;
+    h2::after {
+        background-color: black;
+    }
+}
+
+#curve1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $curve1-bgcolor;
+    color: $curve1-textcolor;
+    h2 {
+        margin: 0 30%;
+        &::after {
+            background-color: $curve1-textcolor;
+        }
+    }
+    img {
+        margin: 0 10% 1em 10%;
+    }
+}
+
+#curve2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $curve2-bgcolor;
+    color: $curve2-textcolor;
+    h2 {
+        margin: 0 30%;
+        &::after {
+            background-color: $curve2-textcolor;
+        }
+    }
+    img {
+        margin: 0 10% 1em 10%;
+    }
+}
