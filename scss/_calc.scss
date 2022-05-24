@@ -1,9 +1,88 @@
 $ultrasound-bgcolor: white;
 $ultrasound-textcolor: black;
+$length-bgcolor: rgb(75, 75, 75);
+$length-textcolor: rgb(182, 180, 180);
+$excel-bgcolor: rgb(47, 47, 47);
+$excel-textcolor: rgb(180, 179, 179);
+$excel-hovercolor: lighten($excel-textcolor, 15);
 #ultrasound {
     background-color: $ultrasound-bgcolor;
     color: $ultrasound-textcolor;
     h2::after {
         background-color: $ultrasound-textcolor;
+    }
+}
+
+#length {
+    p {
+        margin-bottom: 10px;
+    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: $length-bgcolor;
+    color: $length-textcolor;
+    h2::after {
+        background-color: $length-textcolor;
+    }
+    output {
+        padding: 0 10px;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    input[type=button] {
+        color: darken($length-textcolor, 25);
+        width: 20%;
+        height: 3em;
+        margin: 3em 40%;
+        border-radius: 10000px;
+        border: none;
+        transition: background 300ms ease-in-out;
+        &:hover {
+            background-color: darken(white, 25);
+            cursor: pointer;
+        }
+    }
+    input[type=text] {
+        width: 20%;
+        height: 3em;
+        border-radius: 10000px;
+        margin: 1em 40%;
+        border: none;
+        transition: background 200ms ease-in-out;
+        padding: 0 10px;
+    }
+}
+
+#excel {
+    background-color: $excel-bgcolor;
+    color: $excel-textcolor;
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+    a {
+        color: $excel-textcolor;
+        font-size: 20px;
+        width: 15%;
+        text-align: center;
+        margin-bottom: 3em;
+        transition: color 200ms ease-in-out;
+        &:hover {
+            color: $excel-hovercolor;
+        }
+    }
+    h2::after {
+        background-color: $excel-textcolor;
+    }
+    h3 {
+        text-align: center;
+        padding: 1em 2em;
+        &::after {
+            background-color: $excel-textcolor;
+        }
     }
 }

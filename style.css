@@ -82,18 +82,70 @@
   #ultrasound h2::after {
     background-color: black; }
 
+#length {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #4b4b4b;
+  color: #b6b4b4; }
+  #length p {
+    margin-bottom: 10px; }
+  #length h2::after {
+    background-color: #b6b4b4; }
+  #length output {
+    padding: 0 10px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center; }
+  #length input[type=button] {
+    color: #777474;
+    width: 20%;
+    height: 3em;
+    margin: 3em 40%;
+    border-radius: 10000px;
+    border: none;
+    transition: background 300ms ease-in-out; }
+    #length input[type=button]:hover {
+      background-color: #bfbfbf;
+      cursor: pointer; }
+  #length input[type=text] {
+    width: 20%;
+    height: 3em;
+    border-radius: 10000px;
+    margin: 1em 40%;
+    border: none;
+    transition: background 200ms ease-in-out;
+    padding: 0 10px; }
+
+#excel {
+  background-color: #2f2f2f;
+  color: #b4b3b3; }
+  #excel .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%; }
+  #excel a {
+    color: #b4b3b3;
+    font-size: 20px;
+    width: 15%;
+    text-align: center;
+    margin-bottom: 3em;
+    transition: color 200ms ease-in-out; }
+    #excel a:hover {
+      color: #dadada; }
+  #excel h2::after {
+    background-color: #b4b3b3; }
+  #excel h3 {
+    text-align: center;
+    padding: 1em 2em; }
+    #excel h3::after {
+      background-color: #b4b3b3; }
+
 #codes {
   background-color: white;
   color: black; }
   #codes h2::after {
-    background-color: black; }
-
-#studies {
-  background-color: white;
-  color: black; }
-  #studies h2::after {
-    background-color: black; }
-  #studies h3::after {
     background-color: black; }
 
 #publications-container {
@@ -141,37 +193,37 @@
 
 #publication2 {
   background-color: #2f2f2f;
-  color: #b6b4b4;
+  color: #b4b4b4;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
   #publication2 a {
     font-size: 30px;
-    color: #b6b4b4; }
+    color: #b4b4b4; }
     #publication2 a:hover {
-      color: whitesmoke; }
+      color: #f4f4f4; }
       #publication2 a:hover::after {
-        background-color: whitesmoke; }
+        background-color: #f4f4f4; }
     #publication2 a::after {
-      background-color: #b6b4b4; }
+      background-color: #b4b4b4; }
 
 #publication3 {
   background-color: black;
-  color: #b6b4b4;
+  color: #b4b4b4;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
   #publication3 a {
     font-size: 30px;
-    color: #b6b4b4; }
+    color: #b4b4b4; }
     #publication3 a:hover {
-      color: whitesmoke; }
+      color: #f4f4f4; }
       #publication3 a:hover::after {
-        background-color: whitesmoke; }
+        background-color: #f4f4f4; }
     #publication3 a::after {
-      background-color: #b6b4b4; }
+      background-color: #b4b4b4; }
 
 #tables {
   background-color: white;
