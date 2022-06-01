@@ -21,6 +21,12 @@ $link-size: 30px;
             background-color: black;
         }
     }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
     a {
         padding: 1em 2em 1em 2em;
         text-align: center;
@@ -47,6 +53,7 @@ $link-size: 30px;
     align-items: center;
     flex-wrap: wrap;
     a {
+        padding: 0 2em 1em 2em;
         font-size: $link-size;
         color: $publication1-textcolor;
         &:hover {
@@ -79,28 +86,6 @@ $link-size: 30px;
         }
         &::after {
             background-color: $publication2-textcolor;
-        }
-    }
-}
-
-#publication3 {
-    background-color: $publication3-bgcolor;
-    color: $publication3-textcolor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    a {
-        font-size: $link-size;
-        color: $publication3-textcolor;
-        &:hover {
-            color: $publication3-hover-textcolor;
-            &::after {
-                background-color: $publication3-hover-textcolor;
-            }
-        }
-        &::after {
-            background-color: $publication3-textcolor;
         }
     }
 }

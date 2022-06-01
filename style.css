@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
 #about {
-  font-size: 1.25rem;
   color: black;
   display: flex;
   justify-content: center;
@@ -16,7 +15,6 @@
     padding-top: 10px; }
 
 #group1 {
-  font-size: 1.25rem;
   background-color: #4b4b4b;
   color: #b4b4b4;
   display: flex;
@@ -27,7 +25,6 @@
     background-color: #b4b4b4; }
 
 #finances {
-  font-size: 1.25rem;
   background-color: #2f2f2f;
   color: #b4b4b4;
   display: flex;
@@ -54,27 +51,28 @@
       grid-row: d; }
 
 #about-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
   background-color: white;
-  color: black;
-  font-size: 18px; }
+  color: black; }
   #about-text h2::after {
     background-color: black; }
 
 #studieorter {
   background-color: #4b4b4b;
   color: #b6b4b4; }
+  #studieorter h2::after {
+    background-color: #b6b4b4; }
 
 #studiepopulation {
   background-color: #2f2f2f;
   color: #b4b3b3; }
+  #studiepopulation h2::after {
+    background-color: #b4b3b3; }
 
 #group2 {
   background-color: black;
   color: lightgrey; }
+  #group2 h2::after {
+    background-color: lightgrey; }
 
 #ultrasound {
   background-color: white;
@@ -197,6 +195,11 @@
     padding: 2em; }
     #publications-container h2::after {
       background-color: black; }
+  #publications-container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
   #publications-container a {
     padding: 1em 2em 1em 2em;
     text-align: center;
@@ -220,6 +223,7 @@
   align-items: center;
   flex-wrap: wrap; }
   #publication1 a {
+    padding: 0 2em 1em 2em;
     font-size: 30px;
     color: #b4b4b4; }
     #publication1 a:hover {
@@ -244,23 +248,6 @@
       #publication2 a:hover::after {
         background-color: #f4f4f4; }
     #publication2 a::after {
-      background-color: #b4b4b4; }
-
-#publication3 {
-  background-color: black;
-  color: #b4b4b4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  #publication3 a {
-    font-size: 30px;
-    color: #b4b4b4; }
-    #publication3 a:hover {
-      color: #f4f4f4; }
-      #publication3 a:hover::after {
-        background-color: #f4f4f4; }
-    #publication3 a::after {
       background-color: #b4b4b4; }
 
 header {
@@ -288,9 +275,9 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       gap: 10px; }
       header nav ul li {
-        display: flex;
         list-style: none;
         padding: 1em 1.5em;
         width: fit-content;
@@ -368,11 +355,11 @@ footer {
 html {
   overflow-y: overlay; }
 
-h1 {
-  font-family: 'Hind', sans-serif; }
-
 .header {
   width: 100%; }
+
+h1 {
+  font-family: 'Hind', sans-serif; }
 
 h2 {
   margin: 0 auto;
@@ -415,4 +402,9 @@ p {
   font-family: 'Lora', serif; }
 
 section {
+  font-size: 18px;
   padding: 6rem 10rem; }
+
+html,
+body {
+  width: 100%; }

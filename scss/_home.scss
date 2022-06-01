@@ -8,7 +8,6 @@ $finances-textcolor: rgb(180, 180, 180);
     h2::after {
         background-color: $about-textcolor;
     }
-    font-size: 1.25rem;
     color: $about-textcolor;
     display: flex;
     justify-content: center;
@@ -23,7 +22,6 @@ $finances-textcolor: rgb(180, 180, 180);
 }
 
 #group1 {
-    font-size: 1.25rem;
     background-color: $group-bgcolor;
     color: $group-textcolor;
     display: flex;
@@ -36,7 +34,6 @@ $finances-textcolor: rgb(180, 180, 180);
 }
 
 #finances {
-    font-size: 1.25rem;
     background-color: $finances-bgcolor;
     color: $finances-textcolor;
     display: flex;

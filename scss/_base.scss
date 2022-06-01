@@ -1,3 +1,4 @@
+$p-size: 18px;
 $h2-size: 45px;
 $h3-size: 25px;
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
@@ -9,12 +10,12 @@ html {
     overflow-y: overlay;
 }
 
-h1 {
-    font-family: 'Hind', sans-serif;
-}
-
 .header {
     width: 100%;
+}
+
+h1 {
+    font-family: 'Hind', sans-serif;
 }
 
 h2 {
@@ -64,5 +65,11 @@ p {
 }
 
 section {
+    font-size: $p-size;
     padding: 6rem 10rem;
+}
+
+html,
+body {
+    width: 100%;
 }
